@@ -1,0 +1,12 @@
+import os
+from typing import Any, Union
+import xlrd
+
+import pandas
+from pandas import DataFrame
+from pandas.io.parsers import TextFileReader
+
+df1 = pandas.read_json('supermarkets.json')
+
+df1 = df1.ix[0:3,0:3]
+print(df1)
